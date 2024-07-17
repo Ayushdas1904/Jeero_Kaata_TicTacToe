@@ -4,13 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-    <link href="./src/output.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            width: 100%;
+        }
+        nav {
+            width: 100%;
+            background-color: #06b6d4; /* cyan-500 */
+            font-weight: 600; /* font-semibold */
+            font-family: monospace; /* font-mono */
+            padding: 3vh; /* p-4 */
+            color: white; /* text-white */
+            text-decoration-thickness: 8px; /* underline-offset-8 */
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 91vh; /* h-screen */
+            background-color: #ff6a00; /* orange-700 */
+        }
+        .board {
+            position: absolute;
+            background-color: #6b7280; /* gray-500 */
+            height: 400px;
+            width: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content:space-evenly;
+            align-items: center;
+        }
+        .check{
+            background-color: transparent;
+            border: 2px solid black;
+            border-radius: 20%;
+            position: relative;
+            height: 110px;
+            width: 110px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .check img{
+            width: 90px;
+            height: 90px;
+            display: none;
+        }
+    </style>
 </head>
-<body class=" bg-orange-900+
-+ ">
-    <nav class=" bg-cyan-500 font-semibold font-mono p-4 text-white underline-offset-8 " >
+<body>
+    <nav>
         <p>JEERO KAATA</p>
     </nav>
-    <div class="container ">hi</div>
+    <div class="container">
+        <div class="board">
+            <div class="check check1"><img src="" alt=""></div>
+            <div class="check check2"><img src="" alt=""></div>
+            <div class="check check3"><img src="" alt=""></div>
+            <div class="check check4"><img src="" alt=""></div>
+            <div class="check check5"><img src="" alt=""></div>
+            <div class="check check6"><img src="" alt=""></div>
+            <div class="check check7"><img src="" alt=""></div>
+            <div class="check check8"><img src="" alt=""></div>
+            <div class="check check9"><img src="" alt=""></div>
+        </div>
+    </div>
 </body>
 </html>
