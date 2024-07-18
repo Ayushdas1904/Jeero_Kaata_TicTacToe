@@ -16,9 +16,9 @@ function drawO(image) {
 
 function handleClick(event) {
     const cell = event.currentTarget;
-    const image = cell.querySelector('img');
+    const image = cell.querySelector('.check img');
     console.log("Cell clicked", cell);
-    if (image) { // Only change if the cell is empty
+    if (!image.src.includes("cross.svg") && !image.src.includes("zero.svg")) { // Only change if the cell is empty
         if (currentTurn === 'X') {
             drawX(image);
             currentTurn = 'O';
